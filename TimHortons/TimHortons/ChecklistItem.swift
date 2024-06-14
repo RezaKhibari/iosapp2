@@ -1,0 +1,13 @@
+//
+//  ChecklistItem.swift
+//  TimHortons
+//
+//  Created by Alireza Khibari on 2024-06-14.
+//
+
+import Foundation
+class ChecklistItem {
+  var text = ""
+  var checked = false
+}
+
