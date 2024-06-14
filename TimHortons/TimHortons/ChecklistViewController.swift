@@ -12,6 +12,9 @@ class ChecklistViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
+
+        
         let item1 = ChecklistItem()
         item1.text = "Dark Roast regular medium size coffee"
         items.append(item1)
@@ -90,5 +93,30 @@ class ChecklistViewController: UITableViewController {
       label.text = item.text
     }
 
+    // MARK: - Actions
+    @IBAction func addItem() {
+        let newRowIndex = items.count
+
+          let item = ChecklistItem()
+          item.text = "I am a new row"
+          items.append(item)
+
+          let indexPath = IndexPath(row: newRowIndex, section: 0)
+          let indexPaths = [indexPath]
+          tableView.insertRows(at: indexPaths, with: .automatic)
+    }
+    
+    override func tableView(
+      _ tableView: UITableView,
+      commit editingStyle: UITableViewCell.EditingStyle,
+      forRowAt indexPath: IndexPath
+    ) {
+      // 1
+      items.remove(at: indexPath.row)
+
+      // 2
+      let indexPaths = [indexPath]
+      tableView.deleteRows(at: indexPaths, with: .automatic)
+    }
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y7Y-ap-ajg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ozG-8t-dHU">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Checklist View Controller-->
+        <!--Checklists-->
         <scene sceneID="27b-FW-qe2">
             <objects>
                 <tableViewController id="Y7Y-ap-ajg" customClass="ChecklistViewController" customModule="TimHortons" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,8 +39,75 @@
                             <outlet property="delegate" destination="Y7Y-ap-ajg" id="0Re-bu-aEc"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Checklists" id="wHZ-ZF-fck">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ONX-gG-XGo">
+                            <connections>
+                                <segue destination="M4Y-6a-mda" kind="show" id="1Cc-Yk-FeF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkZ-7p-MrS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951.20000000000005" y="-111.0944527736132"/>
+        </scene>
+        <!--Add Item-->
+        <scene sceneID="Th3-16-Xg5">
+            <objects>
+                <tableViewController id="M4Y-6a-mda" customClass="AddItemViewController" customModule="TimHortons" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oDK-UT-FJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zF3-No-SD2">
+                                <rect key="frame" x="0.0" y="50" width="375" height="47.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zF3-No-SD2" id="nyJ-a7-rs0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="47.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M4Y-6a-mda" id="jnw-WO-I5r"/>
+                            <outlet property="delegate" destination="M4Y-6a-mda" id="aE2-Xy-KkD"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Add Item" largeTitleDisplayMode="never" id="AZN-AM-mbR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rqG-hH-xdx">
+                            <connections>
+                                <action selector="cancel" destination="M4Y-6a-mda" id="TqD-Z7-aRg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="siP-38-nKQ">
+                            <connections>
+                                <action selector="done" destination="M4Y-6a-mda" id="SE0-zy-gIk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IX9-Ij-4SS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1910" y="-98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AeO-f4-OME">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ozG-8t-dHU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mg1-mk-rn4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y7Y-ap-ajg" kind="relationship" relationship="rootViewController" id="6Nh-z7-oOw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I72-qs-bvL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="12" y="-111.0944527736132"/>
         </scene>
