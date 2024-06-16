@@ -76,6 +76,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                                     <connections>
                                                         <action selector="done" destination="M4Y-6a-mda" eventType="editingDidEndOnExit" id="9yd-gQ-zi0"/>
+                                                        <outlet property="delegate" destination="M4Y-6a-mda" id="HBs-85-Bm5"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>

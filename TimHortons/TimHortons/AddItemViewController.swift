@@ -67,7 +67,7 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
         in: stringRange,
         with: string)
       if newText.isEmpty {
-        doneBarButton.isEnabled = false
+       doneBarButton.isEnabled = false
       } else {
         doneBarButton.isEnabled = true
       }
