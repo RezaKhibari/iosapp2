@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E87170D22C1C82B800770EDA /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87170D12C1C82B800770EDA /* ChecklistItem.swift */; };
-		E87170D42C1CB0A000770EDA /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87170D32C1CB0A000770EDA /* AddItemViewController.swift */; };
+		E87170D42C1CB0A000770EDA /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */; };
 		E8EB272C2C1010D1005F2ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB272B2C1010D1005F2ABE /* AppDelegate.swift */; };
 		E8EB272E2C1010D1005F2ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB272D2C1010D1005F2ABE /* SceneDelegate.swift */; };
 		E8EB27302C1010D1005F2ABE /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB272F2C1010D1005F2ABE /* ChecklistViewController.swift */; };
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		E87170D12C1C82B800770EDA /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		E87170D32C1CB0A000770EDA /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		E8EB27282C1010D1005F2ABE /* TimHortons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimHortons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EB272B2C1010D1005F2ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8EB272D2C1010D1005F2ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 				E8EB27362C1010D2005F2ABE /* LaunchScreen.storyboard */,
 				E8EB27392C1010D2005F2ABE /* Info.plist */,
 				E87170D12C1C82B800770EDA /* ChecklistItem.swift */,
-				E87170D32C1CB0A000770EDA /* AddItemViewController.swift */,
+				E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */,
 			);
 			path = TimHortons;
 			sourceTree = "<group>";
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87170D42C1CB0A000770EDA /* AddItemViewController.swift in Sources */,
+				E87170D42C1CB0A000770EDA /* ItemDetailViewController.swift in Sources */,
 				E8EB27302C1010D1005F2ABE /* ChecklistViewController.swift in Sources */,
 				E8EB272C2C1010D1005F2ABE /* AppDelegate.swift in Sources */,
 				E8EB272E2C1010D1005F2ABE /* SceneDelegate.swift in Sources */,
