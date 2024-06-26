@@ -7,7 +7,8 @@
 
 import UIKit
 
-class AllListViewController: UITableViewController, ListDetailViewControllerDelegate {
+class AllListsViewController: UITableViewController, ListDetailViewControllerDelegate, UINavigationControllerDelegate {
+
 
     let cellIdentifier = "ChecklistCell"
    // var lists = [Checklist]()
@@ -74,6 +75,8 @@ class AllListViewController: UITableViewController, ListDetailViewControllerDele
       _ tableView: UITableView,
       didSelectRowAt indexPath: IndexPath) {
           
+        dataModel.indexOfSelectedChecklist = indexPath.row
+          
         let checklist = dataModel.lists[indexPath.row]
           performSegue(
             withIdentifier: "ShowChecklist",
@@ -94,11 +97,38 @@ class AllListViewController: UITableViewController, ListDetailViewControllerDele
         }
       }
     
+    override func viewDidAppear(_ animated: Bool) {
+      super.viewDidAppear(animated)
+
+      navigationController?.delegate = self
+
+      let index = dataModel.indexOfSelectedChecklist
+        
+        if index >= 0 && index < dataModel.lists.count {
+        let checklist = dataModel.lists[index]
+        performSegue(
+          withIdentifier: "ShowChecklist",
+          sender: checklist)
+      }
+    }
+
     // MARK: - List Detail View Controller Delegates
     func listDetailViewControllerDidCancel(
       _ controller: ListDetailViewController
     ) {
       navigationController?.popViewController(animated: true)
+    }
+
+    // MARK: - Navigation Controller Delegates
+    func navigationController(
+      _ navigationController: UINavigationController,
+      willShow viewController: UIViewController,
+      animated: Bool
+    ) {
+      // Was the back button tapped?
+      if viewController === self {
+          dataModel.indexOfSelectedChecklist = -1
+      }
     }
 
     func listDetailViewController(
@@ -155,6 +185,7 @@ class AllListViewController: UITableViewController, ListDetailViewControllerDele
         animated: true)
     }
 
+    
 }
 
 

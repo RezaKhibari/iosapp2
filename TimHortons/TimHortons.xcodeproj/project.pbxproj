@@ -17,7 +17,7 @@
 		E8EB27332C1010D1005F2ABE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8EB27322C1010D1005F2ABE /* Base */; };
 		E8EB27352C1010D2005F2ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EB27342C1010D2005F2ABE /* Assets.xcassets */; };
 		E8EB27382C1010D2005F2ABE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8EB27372C1010D2005F2ABE /* Base */; };
-		E8ED6B682C23308C00E04236 /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6B672C23308C00E04236 /* AllListViewController.swift */; };
+		E8ED6B682C23308C00E04236 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6B672C23308C00E04236 /* AllListsViewController.swift */; };
 		E8F02B532C27CBF1009383E6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F02B522C27CBF1009383E6 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		E8EB27342C1010D2005F2ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8EB27372C1010D2005F2ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8EB27392C1010D2005F2ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8ED6B672C23308C00E04236 /* AllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
+		E8ED6B672C23308C00E04236 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		E8F02B522C27CBF1009383E6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +49,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8DA514B2C29C3810033F756 /* View Cotrollers */ = {
+			isa = PBXGroup;
+			children = (
+				E8ED6B672C23308C00E04236 /* AllListsViewController.swift */,
+				E8EB272F2C1010D1005F2ABE /* ChecklistViewController.swift */,
+				E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */,
+				E8D9EC8A2C252BD400B7B267 /* ListDetailViewController.swift */,
+			);
+			path = "View Cotrollers";
+			sourceTree = "<group>";
+		};
+		E8DA514C2C29C4580033F756 /* Data models */ = {
+			isa = PBXGroup;
+			children = (
+				E845B65B2C24730F00E1AF3B /* Checklist.swift */,
+				E87170D12C1C82B800770EDA /* ChecklistItem.swift */,
+				E8F02B522C27CBF1009383E6 /* DataModel.swift */,
+			);
+			path = "Data models";
+			sourceTree = "<group>";
+		};
+		E8DA514D2C29C4CD0033F756 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8EB27362C1010D2005F2ABE /* LaunchScreen.storyboard */,
+				E8EB27312C1010D1005F2ABE /* Main.storyboard */,
+				E8EB27342C1010D2005F2ABE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E8EB271F2C1010D1005F2ABE = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +99,12 @@
 		E8EB272A2C1010D1005F2ABE /* TimHortons */ = {
 			isa = PBXGroup;
 			children = (
+				E8DA514D2C29C4CD0033F756 /* Resources */,
+				E8DA514C2C29C4580033F756 /* Data models */,
+				E8DA514B2C29C3810033F756 /* View Cotrollers */,
 				E8EB272B2C1010D1005F2ABE /* AppDelegate.swift */,
-				E8EB272D2C1010D1005F2ABE /* SceneDelegate.swift */,
-				E8EB272F2C1010D1005F2ABE /* ChecklistViewController.swift */,
-				E8EB27312C1010D1005F2ABE /* Main.storyboard */,
-				E8EB27342C1010D2005F2ABE /* Assets.xcassets */,
-				E8EB27362C1010D2005F2ABE /* LaunchScreen.storyboard */,
 				E8EB27392C1010D2005F2ABE /* Info.plist */,
-				E87170D12C1C82B800770EDA /* ChecklistItem.swift */,
-				E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */,
-				E8ED6B672C23308C00E04236 /* AllListViewController.swift */,
-				E845B65B2C24730F00E1AF3B /* Checklist.swift */,
-				E8D9EC8A2C252BD400B7B267 /* ListDetailViewController.swift */,
-				E8F02B522C27CBF1009383E6 /* DataModel.swift */,
+				E8EB272D2C1010D1005F2ABE /* SceneDelegate.swift */,
 			);
 			path = TimHortons;
 			sourceTree = "<group>";
@@ -156,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8ED6B682C23308C00E04236 /* AllListViewController.swift in Sources */,
+				E8ED6B682C23308C00E04236 /* AllListsViewController.swift in Sources */,
 				E87170D42C1CB0A000770EDA /* ItemDetailViewController.swift in Sources */,
 				E8EB27302C1010D1005F2ABE /* ChecklistViewController.swift in Sources */,
 				E8EB272C2C1010D1005F2ABE /* AppDelegate.swift in Sources */,

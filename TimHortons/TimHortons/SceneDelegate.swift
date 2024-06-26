@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       options connectionOptions: UIScene.ConnectionOptions
     ) {
       let navigationController = window!.rootViewController as! UINavigationController
-      let controller = navigationController.viewControllers[0] as! AllListViewController
+      let controller = navigationController.viewControllers[0] as! AllListsViewController
       controller.dataModel = dataModel
     }
 

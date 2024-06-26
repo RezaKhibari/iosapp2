@@ -20,7 +20,7 @@
         <!--All Lists-->
         <scene sceneID="1FF-Gb-USb">
             <objects>
-                <tableViewController title="Checklists" id="6eJ-Wx-1B0" userLabel="All Lists" customClass="AllListViewController" customModule="TimHortons" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Checklists" id="6eJ-Wx-1B0" userLabel="All Lists" customClass="AllListsViewController" customModule="TimHortons" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Checklists" largeTitleDisplayMode="never" id="vSX-hV-9Jq">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MGk-D6-eB8">
                             <connections>
