@@ -10,13 +10,13 @@
 		E845B65C2C24730F00E1AF3B /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845B65B2C24730F00E1AF3B /* Checklist.swift */; };
 		E87170D22C1C82B800770EDA /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87170D12C1C82B800770EDA /* ChecklistItem.swift */; };
 		E87170D42C1CB0A000770EDA /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */; };
+		E8CD161E2C2F130D006BCEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8CD161D2C2F130D006BCEF1 /* Assets.xcassets */; };
+		E8D8BFAE2C2DB8FF00E2A291 /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8BFAD2C2DB8FF00E2A291 /* IconPickerViewController.swift */; };
 		E8D9EC8B2C252BD400B7B267 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D9EC8A2C252BD400B7B267 /* ListDetailViewController.swift */; };
 		E8EB272C2C1010D1005F2ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB272B2C1010D1005F2ABE /* AppDelegate.swift */; };
 		E8EB272E2C1010D1005F2ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB272D2C1010D1005F2ABE /* SceneDelegate.swift */; };
 		E8EB27302C1010D1005F2ABE /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB272F2C1010D1005F2ABE /* ChecklistViewController.swift */; };
 		E8EB27332C1010D1005F2ABE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8EB27322C1010D1005F2ABE /* Base */; };
-		E8EB27352C1010D2005F2ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8EB27342C1010D2005F2ABE /* Assets.xcassets */; };
-		E8EB27382C1010D2005F2ABE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8EB27372C1010D2005F2ABE /* Base */; };
 		E8ED6B682C23308C00E04236 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED6B672C23308C00E04236 /* AllListsViewController.swift */; };
 		E8F02B532C27CBF1009383E6 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F02B522C27CBF1009383E6 /* DataModel.swift */; };
 /* End PBXBuildFile section */
@@ -25,14 +25,14 @@
 		E845B65B2C24730F00E1AF3B /* Checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
 		E87170D12C1C82B800770EDA /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
 		E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		E8CD161D2C2F130D006BCEF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8D8BFAD2C2DB8FF00E2A291 /* IconPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 		E8D9EC8A2C252BD400B7B267 /* ListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 		E8EB27282C1010D1005F2ABE /* TimHortons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimHortons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EB272B2C1010D1005F2ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8EB272D2C1010D1005F2ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E8EB272F2C1010D1005F2ABE /* ChecklistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistViewController.swift; sourceTree = "<group>"; };
 		E8EB27322C1010D1005F2ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8EB27342C1010D2005F2ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8EB27372C1010D2005F2ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8EB27392C1010D2005F2ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8ED6B672C23308C00E04236 /* AllListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		E8F02B522C27CBF1009383E6 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -56,6 +56,7 @@
 				E8EB272F2C1010D1005F2ABE /* ChecklistViewController.swift */,
 				E87170D32C1CB0A000770EDA /* ItemDetailViewController.swift */,
 				E8D9EC8A2C252BD400B7B267 /* ListDetailViewController.swift */,
+				E8D8BFAD2C2DB8FF00E2A291 /* IconPickerViewController.swift */,
 			);
 			path = "View Cotrollers";
 			sourceTree = "<group>";
@@ -73,9 +74,8 @@
 		E8DA514D2C29C4CD0033F756 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E8EB27362C1010D2005F2ABE /* LaunchScreen.storyboard */,
+				E8CD161D2C2F130D006BCEF1 /* Assets.xcassets */,
 				E8EB27312C1010D1005F2ABE /* Main.storyboard */,
-				E8EB27342C1010D2005F2ABE /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,8 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8EB27352C1010D2005F2ABE /* Assets.xcassets in Resources */,
-				E8EB27382C1010D2005F2ABE /* Base in Resources */,
+				E8CD161E2C2F130D006BCEF1 /* Assets.xcassets in Resources */,
 				E8EB27332C1010D1005F2ABE /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +182,7 @@
 				E8ED6B682C23308C00E04236 /* AllListsViewController.swift in Sources */,
 				E87170D42C1CB0A000770EDA /* ItemDetailViewController.swift in Sources */,
 				E8EB27302C1010D1005F2ABE /* ChecklistViewController.swift in Sources */,
+				E8D8BFAE2C2DB8FF00E2A291 /* IconPickerViewController.swift in Sources */,
 				E8EB272C2C1010D1005F2ABE /* AppDelegate.swift in Sources */,
 				E8EB272E2C1010D1005F2ABE /* SceneDelegate.swift in Sources */,
 				E87170D22C1C82B800770EDA /* ChecklistItem.swift in Sources */,
@@ -201,14 +201,6 @@
 				E8EB27322C1010D1005F2ABE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E8EB27362C1010D2005F2ABE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8EB27372C1010D2005F2ABE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,13 +330,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4T8F55BMC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimHortons/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -365,13 +358,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4T8F55BMC5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimHortons/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
